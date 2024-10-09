@@ -1,4 +1,5 @@
 /* all section */
+
 * {
   margin: 0;
   padding: 0;
@@ -84,28 +85,107 @@ span {
   padding: 80px 10%;
 }
 /* main section start */
-/* client section */
- #client{
-    text-align: center;
-    background-color: white;
-    width: auto;
-    padding: 50px 10%;
-
- }
- #client-heading{
-    color: #4D4D4D;
-    font-size: 36px;
-    font-weight: 600;
-    padding: 10px 0px;
- }
-#client-allicon{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 0px;
-
-}.client-icon{
-    height: 40px;
-    width: 40px;
+/* Our client section */
+#client {
+  text-align: center;
+  background-color: white;
+  width: auto;
+  padding: 50px 10%;
+}
+#client-heading {
+  color: #4d4d4d;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+#client-allicon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+.client-icon {
+  height: 40px;
+  width: 40px;
+}
+/* Pixelgrade section */
+#pixelgrade{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 30px 10%;
 }
 
+#pixelgrade-text{
+  width: 661px;
+  height: 268px;
+  padding: 20px 10%;
+}
+#pixelgrade-heading{
+  font-size: 36px;
+  font-weight: 600;
+  color: #4D4D4D ;
+  
+}
+#pixelgrade-pragraph{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 20px 0;
+}
+/* Local business section */
+#business{
+  background-color: #F5F7FA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 50px 10%;
+}
+.business-component{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+#business-allcomponent{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  padding: 0 10%;
+}
+#business-heading{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color:  #4D4D4D;
+}
+
+/* Design section */
+
+#design{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 80px 10%;
+}
+
+#design-text{
+  width: 661px;
+  height: 268px;
+  padding: 20px 10%;
+}
+#design-heading{
+  font-size: 36px;
+  font-weight: 600;
+  color: #4D4D4D ;
+  
+}
+#design-pragraph{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 20px 0;
+}
