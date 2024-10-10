@@ -15,6 +15,13 @@
   color: white;
   background-color: #4caf4f;
 }
+.button:hover {
+  background-color: #2f7332;
+}
+body ul li a:hover {
+  color: #4caf4f;
+  text-decoration: underline;
+}
 span {
   color: #4caf4f;
 }
@@ -143,6 +150,9 @@ span {
   align-items: center;
   width: auto;
   padding: 80px 10%;
+}
+.community-card:hover {
+  scale: 1.2;
 }
 
 /* Pixelgrade section */
@@ -339,6 +349,9 @@ span {
   color: #717171;
   padding: 10px;
 }
+.card-text:hover {
+  scale: 1.2;
+}
 
 /* Demo Section */
 .demo {
@@ -359,4 +372,68 @@ span {
 .demo button {
   height: 52px;
   width: 178px;
+}
+/* Footer section start */
+#footer-container {
+  height: 328px;
+  width: auto;
+  background: #263238;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+.footer-social {
+  display: grid;
+  gap: 20px;
+}
+.footer-social p {
+  color: #f5f7fa;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.footer-social-icon {
+  display: flex;
+  gap: 20px;
+}
+.footer-info {
+  display: flex;
+}
+.footer-info h3 {
+  color: #f5f7fa;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 80px;
+}
+
+.footer-info ul {
+  display: grid;
+  padding: 0px 50px;
+  list-style: none;
+}
+.footer-info ul li a {
+  text-decoration: none;
+  color: #f5f7fa;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+#footer-form input {
+  height: 30px;
+  width: 255px;
+  border-radius: 10px;
+  background-color: #abbed166;
+  border: none;
+  padding: 10px;
+}
+::placeholder {
+  color: #f5f7fa;
+}
+.footer-social-icon img:hover {
+  scale: 1.3;
 }
