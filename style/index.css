@@ -308,6 +308,7 @@ span {
   margin-left: auto;
   margin-right: auto;
 }
+
 .card {
   display: flex;
   justify-content: space-between;
@@ -337,4 +338,25 @@ span {
   line-height: 28px;
   color: #717171;
   padding: 10px;
+}
+
+/* Demo Section */
+.demo {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  background-color: #f5f7fa;
+  height: 300px;
+  width: auto;
+}
+.demo h1 {
+  font-size: 64px;
+  width: 600;
+  line-height: 76px;
+  color: #263238;
+  padding-bottom: 20px;
+}
+.demo button {
+  height: 52px;
+  width: 178px;
 }
