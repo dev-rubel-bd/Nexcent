@@ -27,7 +27,7 @@ span {
 }
 /* Header Section */
 /* navigation bar section */
-#nav-bar {
+.nav-container {
   display: flex;
   width: auto;
   padding: 0 10%;
@@ -36,24 +36,33 @@ span {
   align-items: center;
   background-color: #f5f7fa;
 }
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+}
 
 #nav-logo {
   height: 24px;
   width: 154px;
 }
 
-.ul-navbar {
+.navbar-link {
   display: flex;
   list-style: none;
   gap: 50px;
 }
 
-.ul-navbar a {
+.navbar-link a {
   color: black;
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   font-weight: 400;
+}
+.nav-button {
+  display: flex;
 }
 
 #navbar-logIn-button {
@@ -73,6 +82,17 @@ span {
   color: white;
   background-color: #4caf4f;
 }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger span {
+  height: 3px;
+  width: 30px;
+  background: #4caf4f;
+  margin: 2px 0;
+}
 /* hero section */
 .hero-heading {
   color: #4d4d4d;
@@ -89,7 +109,11 @@ span {
   justify-content: space-between;
   align-items: center;
   width: auto;
-  padding: 80px 10%;
+  padding: 10px 10%;
+}
+.hero-img img {
+  height: auto;
+  width: 350px;
 }
 /* main section start */
 /* Our client section */
@@ -161,24 +185,28 @@ span {
   justify-content: space-between;
   align-items: center;
   width: auto;
-  padding: 30px 10%;
+  padding: 20px 10%;
 }
 
 #pixelgrade-text {
-  width: 661px;
-  height: 268px;
+  width: Auto;
+  height: 100%;
   padding: 20px 10%;
 }
 #pixelgrade-heading {
   font-size: 36px;
   font-weight: 600;
+  padding: 20px 0px;
   color: #4d4d4d;
 }
 #pixelgrade-pragraph {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  padding: 20px 0;
+}
+#pixelgrade-img {
+  height: auto;
+  width: 350px;
 }
 /* Local business section */
 #business {
@@ -186,6 +214,7 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
   width: auto;
   padding: 50px 10%;
 }
@@ -199,8 +228,9 @@ span {
 #business-allcomponent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
-  padding: 0 10%;
+  justify-content: center;
+  gap: 40px;
+  padding: 0px 10%;
 }
 #business-heading {
   font-size: 36px;
@@ -210,7 +240,6 @@ span {
 }
 
 /* Design section */
-
 #design {
   display: flex;
   justify-content: space-between;
@@ -220,48 +249,50 @@ span {
 }
 
 #design-text {
-  width: 661px;
+  width: auto;
   height: 268px;
   padding: 20px 10%;
 }
-
 #design-heading {
   font-size: 36px;
   font-weight: 600;
   color: #4d4d4d;
+  padding: 10px 0px;
 }
-
 #design-pragraph {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  padding: 20px 0;
+  padding: 10px 0px;
+}
+.design-img img {
+  height: auto;
+  width: 350px;
 }
 /* customer section */
-#customer {
+.customer {
   background-color: #f5f7fa;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: auto;
-  padding: 80px 10%;
+  padding: 10px 10%;
 }
 #customer-text {
-  width: 748px;
-  height: 244px;
+  width: auto;
+  height: 100%;
+  padding: 20px;
 }
 #customer-icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
 }
 #customer-pragraph {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #4d4d4d;
-  margin: 10px 0;
 }
 #customer-title {
   font-size: 16px;
@@ -270,9 +301,9 @@ span {
   color: rgb(149, 145, 145);
   margin: 10px 0;
 }
-#customer-icon p:hover {
-  text-decoration: underline;
-  color: #2f7332;
+.customer-img img {
+  height: auto;
+  width: 250px;
 }
 
 /* Blog section */
@@ -299,13 +330,12 @@ span {
   margin-right: auto;
 }
 
-.card {
+.card-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 10%;
 }
-
 .card-img {
   height: 286px;
   width: 364px;
@@ -344,7 +374,7 @@ span {
 }
 .demo h1 {
   font-size: 64px;
-  width: 600;
+  font-weight: 600;
   line-height: 76px;
   color: #263238;
   padding-bottom: 20px;
@@ -367,6 +397,9 @@ span {
 }
 .footer-social {
   display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 .footer-social p {
@@ -416,4 +449,94 @@ span {
 }
 .footer-social-icon img:hover {
   scale: 1.3;
+}
+
+/* Responsive Style */
+/* Rwsponsive for common section */
+@media screen and (max-width: 1024px) {
+  .nav-container,
+  #hero,
+  #community-allcard,
+  #pixelgrade,
+  #business,
+  #design,
+  .customer,
+  .card-container,
+  .footer,
+  .footer-info {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    text-align: center;
+  }
+}
+/* responsive for nav section */
+@media screen and (max-width: 1024px) {
+  .navbar-link {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: #4caf4f;
+    width: 100%;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-link.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  .nav-container {
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    padding: 50px;
+  }
+  .nav-bar {
+    justify-content: space-between;
+    padding: 30px 5%;
+  }
+  /* Hero Section */
+  .hero-img img {
+    height: auto;
+    width: 80%;
+    padding: 50px 0px;
+  }
+  .hero-heading {
+    color: #4d4d4d;
+    font-size: 48px;
+  }
+  /* pixelgrade section */
+  #pixelgrade-heading {
+    font-size: 36px;
+  }
+  /* customer section */
+  .customer {
+    background-color: #fff;
+    width: auto;
+    padding: 120px 5%;
+  }
+  /* blog section */
+  .demo h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  /* footer section */
+  #footer-container {
+    height: 828px;
+    width: auto;
+    background: #263238;
+  }
+  .footer {
+    display: grid;
+    flex-direction: column;
+  }
 }
